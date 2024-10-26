@@ -14,8 +14,8 @@
   <body>
     <nav>
       <div class="nav_wrapper">
-        <a href="#">
-          <div class="phone_num">
+        <a href="#" class="phone_num">
+          <div>
             <img src="./assets/icons/phone.png" alt="" />
             <p>+34 666 14 10 20</p>
           </div></a
@@ -32,6 +32,22 @@
           <a href="#"><p>CONTACT</p></a>
         </div>
         <button class="main_btn">BOOK NOW</button>
+
+        <img class="mob_menu" onclick="togglerMenu()" src="./assets/icons/mob-menu.svg" alt="" />
+      </div>
+      <div class="mob_menu_wrapper">
+        <div class="mob_menu_exit">
+          <img onclick="togglerMenu()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="mob_menu_list">
+          <a href="#"><p>HOME</p></a>
+          <a href="#"><p>Rent</p></a>
+          <a href="#"><p>For owners</p></a>
+
+          <a href="#"><p>COSTA BLANCA</p></a>
+          <a href="#"><p>About us</p></a>
+          <a href="#"><p>CONTACT</p></a>
+        </div>
       </div>
     </nav>
     <div class="breadcumb">
@@ -762,6 +778,12 @@
           },
         });
       });
+
+      function togglerMenu() {
+        document
+          .querySelector(".mob_menu_wrapper")
+          .classList.toggle("visible_mob_menu");
+      }
     </script>
   </body>
 </html>
