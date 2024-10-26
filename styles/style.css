@@ -548,6 +548,31 @@ footer {
 .essential_wrapper_left .essential_card_item:last-child {
   max-width: 400px;
 }
+.header_carousel {
+  position: relative;
+}
+.car_arrows {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -40px;
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  padding: 0 150px;
+}
+.car_arrow {
+  position: static !important;
+  margin: 0 !important; 
+  transition: all 0.4s ease;
+  width: auto !important;
+  height: auto !important;
+}
+.car_arrow:hover {
+  transition: all 0.4s ease;
+transform: scale(1.05);
+}
 
 @media only screen and (max-width: 1100px) {
   .mob_menu {
@@ -573,9 +598,9 @@ footer {
     gap: 0px;
   }
   .essential_wrapper_left,
-.essential_wrapper_right {
-  width: 100%;
-}
+  .essential_wrapper_right {
+    width: 100%;
+  }
   .rent_main_descs_wrapper {
     flex-direction: column;
     gap: 20px;
@@ -620,6 +645,15 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+  .car_arrows {
+
+    margin-top: -20px;
+  
+    padding: 0 20px;
+  }
+  .car_arrow{
+    width: 20px !important;
+  }
   .essential_block_wrapper,
   .video_block {
     padding: 30px 0;
