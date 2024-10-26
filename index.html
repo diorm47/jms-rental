@@ -33,7 +33,12 @@
         </div>
         <button class="main_btn">BOOK NOW</button>
 
-        <img class="mob_menu" onclick="togglerMenu()" src="./assets/icons/mob-menu.svg" alt="" />
+        <img
+          class="mob_menu"
+          onclick="togglerMenu()"
+          src="./assets/icons/mob-menu.svg"
+          alt=""
+        />
       </div>
       <div class="mob_menu_wrapper">
         <div class="mob_menu_exit">
@@ -90,9 +95,18 @@
 
     <div class="rent_desc">
       <div class="rent_desc_wrapper container">
-        <div class="block_title">
-          <h3>New Villa With Pool In Finestrat</h3>
+        <div class="main_top">
+          <div class="block_title">
+            <h3>New Villa With Pool In Finestrat</h3>
+          </div>
+          <div class="rent_cost">
+            <p>
+              From <b>350 € </b>
+              per night
+            </p>
+          </div>
         </div>
+
         <div class="rent_main_descs_wrapper">
           <div class="rent_main_descs">
             <div>
@@ -243,9 +257,14 @@
               <p>4 bathrooms</p>
             </div>
           </div>
+
+          <button class="main_btn">RESERVE</button>
+        </div>
+        <div class="mob_rent_dec">
+          <h4>Price:</h4>
           <div class="rent_cost">
             <p>
-              from <b>350 € </b> <br />
+              From <b>350 € </b>
               per night
             </p>
             <button class="main_btn">RESERVE</button>
@@ -606,72 +625,77 @@
     </div>
     <div class="essential_block_wrapper">
       <div class="essential_block container">
-        <div class="block_title">
-          <h3>ESSENTIAL INFORMATION</h3>
+        <div class="essential_title">
+          <h2>Essential information</h2>
         </div>
-        <div class="essential_top">
-          <div class="essential_card">
-            <img src="./assets/icons/essential/1.png" alt="" />
-            <h4>Check-in & Check-out</h4>
-            <p>
-              From 16:00. You need to let the property know what time you'll be
-              arriving in advance. Check-out before 11:00. Late check-out and
-              early check-in are possible for free subject to availability.
-            </p>
+        <div class="essential_wrapper">
+          <div class="essential_wrapper_left">
+            <div class="essential_card_item">
+              <img src="./assets/icons/loc-3.svg" alt="" />
+              <div>
+                <p>Check in is 15:00</p>
+                <p>Check out is 10:00</p>
+              </div>
+            </div>
+            <div class="essential_card_item">
+              <img src="./assets/icons/loc-3.svg" alt="" />
+              <div>
+                <h3>Parking</h3>
+                <p>On-site free parking</p>
+              </div>
+            </div>
+            <div class="essential_card_item">
+              <img src="./assets/icons/loc-3.svg" alt="" />
+              <div>
+                <h3>Cancellation policy</h3>
+                <p>
+                  Free cancellation up to 90 days prior to your arrival 50%
+                  deposit required at the time of booking Final balance due 90
+                  days prior to your arrival date Full amount charged for
+                  reservations made less than 90 days prior to your arrival date
+                  Your reservation will be confirmed in less than 24 hours
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/2.png" alt="" />
-            <h4>Cancellation/ prepayment</h4>
-            <p>
-              From 16:00. You need to let the property know what time you'll be
-              arriving in advance. Check-out before 11:00. Late check-out and
-              early check-in are possible for free subject to availability.
-            </p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/3.png" alt="" />
-            <h4>Check-in & Check-out</h4>
-            <p>
-              From 16:00. You need to let the property know what time you'll be
-              arriving in advance. Check-out before 11:00. Late check-out and
-              early check-in are possible for free subject to availability.
-            </p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/4.png" alt="" />
-            <h4>Check-in & Check-out</h4>
-            <p>
-              From 16:00. You need to let the property know what time you'll be
-              arriving in advance. Check-out before 11:00. Late check-out and
-              early check-in are possible for free subject to availability.
-            </p>
-          </div>
-        </div>
-        <div class="essential_top" style="margin-top: 50px">
-          <div class="essential_card">
-            <img src="./assets/icons/essential/5.png" alt="" />
-            <h4>Safety</h4>
-            <p>Parties and other events are strictly forbidden.</p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/6.png" alt="" />
-            <h4>No age restriction</h4>
-            <p>No age restriction.</p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/7.png" alt="" />
-            <h4>Noisy</h4>
-            <p>Noisy activities are not allowed after 00:00.</p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/8.png" alt="" />
-            <h4>Smoking</h4>
-            <p>Smoking is not allowed.</p>
-          </div>
-          <div class="essential_card">
-            <img src="./assets/icons/essential/9.png" alt="" />
-            <h4>Pets</h4>
-            <p>Pets are not allowed.</p>
+          <div class="essential_wrapper_right">
+            <div class="essential_card_item">
+              <img src="./assets/icons/loc-3.svg" alt="" />
+              <div>
+                <h3>House rules</h3>
+
+                <ul>
+                  <li>
+                    <p>Parties and other events are strictly forbidden</p>
+                  </li>
+                  <li>
+                    <p>
+                      Additional security deposit may apply for selected villas
+                      only
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Accidental Damage Waiver Fee (ADW) required and
+                      non-refundable
+                    </p>
+                  </li>
+                  <li><p>Eco Tax and non-refundable insurance not</p></li>
+                  <li><p>included in the Villa rental price</p></li>
+                  <li>
+                    <p>Cleaning fee is not included in the rental price</p>
+                  </li>
+                  <li><p>Eco Tax, non-refundable insurance and cleaning</p></li>
+                  <li><p>fee payable in cash euros upon arrival</p></li>
+                  <li>
+                    <p>
+                      No additional guests or pets allowed without previous
+                      consent
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
