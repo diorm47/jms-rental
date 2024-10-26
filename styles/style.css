@@ -580,7 +580,7 @@ footer {
   transition: max-height 0.3s ease;
 }
 .villa-description.open {
-  max-height: 500px;
+  max-height: 1000px; /* Увеличьте значение по необходимости */
 }
 .toggle-button {
   cursor: pointer;
@@ -589,6 +589,8 @@ footer {
   color: #333333;
   font-family: Muli, sans-serif;
   font-size: 15px;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 1100px) {
