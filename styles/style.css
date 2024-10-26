@@ -564,14 +564,31 @@ footer {
 }
 .car_arrow {
   position: static !important;
-  margin: 0 !important; 
+  margin: 0 !important;
   transition: all 0.4s ease;
   width: auto !important;
   height: auto !important;
 }
 .car_arrow:hover {
   transition: all 0.4s ease;
-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.villa-description {
+  overflow: hidden;
+  max-height: 80px;
+  transition: max-height 0.3s ease;
+}
+.villa-description.open {
+  max-height: 500px;
+}
+.toggle-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-family: Muli, sans-serif;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -646,12 +663,11 @@ transform: scale(1.05);
 
 @media only screen and (max-width: 500px) {
   .car_arrows {
-
     margin-top: -20px;
-  
+
     padding: 0 20px;
   }
-  .car_arrow{
+  .car_arrow {
     width: 20px !important;
   }
   .essential_block_wrapper,

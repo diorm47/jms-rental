@@ -92,8 +92,16 @@
         </div>
       </div>
       <div class="car_arrows">
-        <img class="car_arrow swiper-button-prev" src="./assets/icons/left-arrow.svg" alt="">
-        <img class="car_arrow  swiper-button-next" src="./assets/icons/right-arrow.svg" alt="">
+        <img
+          class="car_arrow swiper-button-prev"
+          src="./assets/icons/left-arrow.svg"
+          alt=""
+        />
+        <img
+          class="car_arrow swiper-button-next"
+          src="./assets/icons/right-arrow.svg"
+          alt=""
+        />
       </div>
     </div>
 
@@ -285,31 +293,35 @@
             bedrooms, two with their own en-suite shower room, and two shared
             bathrooms.
           </p>
-          <p>
-            The villa forms part of the residential complex Camporrosso Village,
-            hence, you will have access to communal facilities which include
-            large open swimming pool with shallow-water area for kids, heated
-            indoor swimming pool, gym, sauna, paddle tennis court, and kids play
-            area. Built over 2 floors, this magnificent property has 6 double
-            bedrooms and 4 bathrooms.
-          </p>
-          <p>
-            Entering the villa you find an open plan living-dining area, and
-            kitchen with island that leads to the terrace with infinity pool
-            with beautiful views over Benidorm skyline. On the same floor, there
-            are two bedrooms with double beds and en-suite bathrooms, two doble
-            bedrooms with individual beds, and one shared bathroom with shower.
-          </p>
-          <p>
-            On the ground floor you will find two double bedrooms, one bathroom
-            with bathtub, and large leisure area with pool table, football
-            table, tennis table, and outdoor basketball hoop. The outdoor space
-            is equipped with sun loungers and a gas barbecue so you can enjoy
-            your time with friends. The villa is equipped with internet, alarm
-            system, ducted air conditioning on the first floor, and splits on
-            the ground floor. On-site parking. You can be sure that all guests
-            will experience maximum comfort! .
-          </p>
+          <div class="villa-description" id="description">
+            <p>
+              The villa forms part of the residential complex Camporrosso
+              Village, hence, you will have access to communal facilities which
+              include large open swimming pool with shallow-water area for kids,
+              heated indoor swimming pool, gym, sauna, paddle tennis court, and
+              kids play area. Built over 2 floors, this magnificent property has
+              6 double bedrooms and 4 bathrooms.
+            </p>
+            <p>
+              Entering the villa you find an open plan living-dining area, and
+              kitchen with island that leads to the terrace with infinity pool
+              with beautiful views over Benidorm skyline. On the same floor,
+              there are two bedrooms with double beds and en-suite bathrooms,
+              two doble bedrooms with individual beds, and one shared bathroom
+              with shower.
+            </p>
+            <p>
+              On the ground floor you will find two double bedrooms, one
+              bathroom with bathtub, and large leisure area with pool table,
+              football table, tennis table, and outdoor basketball hoop. The
+              outdoor space is equipped with sun loungers and a gas barbecue so
+              you can enjoy your time with friends. The villa is equipped with
+              internet, alarm system, ducted air conditioning on the first
+              floor, and splits on the ground floor. On-site parking. You can be
+              sure that all guests will experience maximum comfort! .
+            </p>
+          </div>
+          <span class="toggle-button" id="toggleButton">SEE MORE ✚</span>
         </div>
         <div class="block_title">
           <h3>Bedroom Layout</h3>
@@ -812,6 +824,16 @@
           .querySelector(".mob_menu_wrapper")
           .classList.toggle("visible_mob_menu");
       }
+
+      const toggleButton = document.getElementById("toggleButton");
+      const description = document.getElementById("description");
+
+      toggleButton.addEventListener("click", () => {
+        description.classList.toggle("open");
+        toggleButton.textContent = description.classList.contains("open")
+          ? "SEE LESS ▬"
+          : "SEE MORE ✚";
+      });
     </script>
   </body>
 </html>
